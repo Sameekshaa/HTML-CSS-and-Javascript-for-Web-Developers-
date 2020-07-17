@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+  
+}
+body{
+    margin:0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+h2{
+    margin-top: 0;
+    float: right;
+    text-align: center;
+    border:1px solid black;
+    border-right: 0;
+    border-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+}
+
+p{
+    padding: 0 10px;
+    font-weight: bold;
+    line-height: 1.5;
+    clear: right;
+}
+
+div{
+    width: 100%;
+}
+
+
+.section{
+    background-color:darkgray;
+    border: 1px solid black;
+    /* margin: 10px  ; */
+    /* width: 30%; 
+    float: left; */
+}
+
+.heading1{
+     background-color: rgb(214, 157, 150);
+
+}
+
+.heading2{
+    background-color: rgb(202, 61, 61);
+    color: white;
+}
+
+.heading3{
+    background-color: khaki;
+    
+}
+
+/* Desktop view */
+@media (min-width: 992px){
+    .section{
+        width: 30%;
+        float: left;
+    }
+    .section1 {
+        margin: 2.5%;
+    }
+    .section2 {
+        margin: 2.5% 0;
+    }
+    .section3 {
+        margin: 2.5%;
+    }
+}
+
+/* Tablet view  */
+@media (min-width:768px) and (max-width: 991px) {
+    .section.section1{
+        width: 47%;
+        float: left;
+        margin: 1.5%;
+        
+    }
+    .section.section2 {
+        width: 47%;
+        float: right;
+        margin: 1.5%;
+    }
+    .section.section3{
+        clear: both;
+        margin: 1.5%;
+        
+    }
+}
+
+/*  Mobile view */
+@media (max-width: 767px){
+    .section {
+        width: 95%;
+        margin: 2% auto;
+}
+}
